@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>  </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+
+            @keyframes anda { 
+
+
+                0% { 
+                    background:  black;
+                    transform:  translateX(0);
+                 }
+                 20% { 
+
+                        height:  40px;
+
+                  }
+
+                  40% { 
+
+                    height:  60px
+                   }
+
+                   60% { 
+
+                    height:  80px;
+                    }
+
+                    80% { 
+
+                    height: 100px }
+
+                100% { 
+                    background:  red;
+                    transform:  translateX(400px);
+             
+                 }
+             }
+            #anima-time div { 
+
+                width:  50px;
+                height:  25px;
+                border:  red 3px solid;
+             }
+
+            #anima-time div:nth-child(1) { 
+         
+                animation:  anda 2s ease-in-out;
+
+                /* ease-in: INicio - acelera no final
+                   ease-out:  desacelera no final;
+                 */
+              }
+
+            #anima-time div:nth-child(2) { 
+        
+            animation:  anda 2s ease-in-out infinite alternate;
+
+
+
+              }
+
+            #anima-time div:nth-child(3) { 
+        
+            animation:  anda 2s ease-in-out 1s infinite alternate;
+
+              }
+            #anima-time div:nth-child(4) { 
+        
+            animation:  anda 2s ease-in-out 1s ;
+            animation-fill-mode:  forwards;
+
+              }
+            #anima-time div:nth-child(4):hover { 
+
+                animation:  alternate;
+
+             }
+            #anima-time div:nth-child(5) { 
+         
+
+            animation:  anda 2s ease-in-out infinite alternate ;
+            animation-play-state:  running;
+
+              }
+              #anima-time div:nth-child(5):hover { 
+
+                animation-play-state: paused;
+                
+            }
+               #anima-time { background: silver }
+              
+        </style>
+
+    </head>
+
+    <body>
+
+        <h2> Animation  </h2>
+
+        <p> <code>Animation short order: name > duration >timing-function > delay > iteration-count >  direction >  fill-mode > play-state </code></p>
+        <div id = "anima-time" > 
+
+            <div> 1 </div>
+            <div> 2 </div>
+            <div> 3 </div>
+            <div> 4 </div>
+            <div> 5 </div>
+        </div>
+    </body>
+
+</html>

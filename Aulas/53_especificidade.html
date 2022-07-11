@@ -1,0 +1,59 @@
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Document</title>
+
+		<style> 
+
+			/* id # é mais especifico que class . 
+
+			   p.destaque é mais especifico que p e mais especifico que destaque
+			*/
+
+			p.destaque { 
+
+				color:  orange;
+
+			 }
+
+			p{ color:red }
+
+			.destaque{ 
+
+				color: green;
+			 }
+
+			#unico { 
+
+				color:  purple;
+
+			 }
+
+			p{ 
+
+			color: black!important }
+
+			/* !important é o maior grau de importancia */
+
+		</style>
+
+	</head>
+
+		<body>
+			
+		<h1> Meu CSS Não funciona </h1>
+
+		<p class = "destaque"> Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptates maiores porro corrupti expedita illum dolor, quisquam totam architecto perferendis eum, voluptate ullam, cupiditate dolorum. Facere dolorum ad, placeat aliquam? 
+		</p>
+		<p class = "destaque" id= "unico"> Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptates maiores porro corrupti expedita illum dolor, quisquam totam architecto perferendis eum, voluptate ullam, cupiditate dolorum. Facere dolorum ad, placeat aliquam? 
+		</p>
+		<p class = "destaque"> Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptates maiores porro corrupti expedita illum dolor, quisquam totam architecto perferendis eum, voluptate ullam, cupiditate dolorum. Facere dolorum ad, placeat aliquam? 
+		</p>
+
+		</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!-- doctype informa ao navegador a versão do html
+	que deve ser renderizada -->
+
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name = "author " content = "Vitor" >
+
+	<meta name= "description"content = "lista de documentos" > 
+
+	<title> 
+		Página de exemplo estrutura básica
+	</title>
+
+
+	<style>
+
+		article { 
+			background-color:  blue;
+		 }
+
+		p { 
+		 background-color: black }
+
+		a[title] { 
+		 	background-color:  red;
+		  }
+
+		a[alt="ahahaha"] { 
+			color:  red;
+		 }
+
+		a[href^=http] { 
+		 	color:  red;
+		  }
+
+		a[alt$=".png"] { 
+
+			color:  red;
+
+		 }
+
+		:not(a) { 
+
+			color:  grey;
+
+		 }
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1> estrutura básica </h1>
+	<p> churrasco </p>
+
+	<a alt = "ahahaha"> com alt </a>
+
+	<br>
+
+	<a> sem title </a>
+
+	<a title = "" > com title </a>
+	<br>
+
+	<a href = "..." > link interno </a>
+
+	<a href = "http://"> link externo </a>
+
+	<br>
+
+	<a alt = "...jpg"> aaaa</a>
+	<a alt = "...png"> aaaa</a>
+
+	<br>
+
+
+
+		<article> 
+
+			<h3> </h3>
+			<p>
+				<a><b> </b> </a>
+
+			</p>
+
+			<p> 
+				<a> <b> </b> </a>
+			</p>
+
+			<p>
+				<a> <b> </b> </a>
+			</p>
+
+		</article>
+	
+</body>
+
+</html>

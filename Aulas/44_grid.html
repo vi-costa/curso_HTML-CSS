@@ -1,0 +1,122 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+
+        <style> 
+
+            .gridContainer { 
+
+                width: 300px;
+               background:  purple;
+             }
+
+            .gridItem { 
+
+                font-size:  2em;
+                font-family:  sans-serif;
+                padding:  5px 15px;
+                text-align:  center;
+              
+
+             }
+
+             /* even = par */
+            .gridItem:nth-child(even){ 
+
+                background: grey;
+                color:  white;
+
+             }
+
+             /* odd = impar */
+            .gridItem:nth-child(odd){ 
+
+                background:  lightgrey;
+
+         
+             }
+
+             /* algumas funções do GRID */
+
+            .gridContainer { 
+
+                width:  100%;
+                display:  grid;
+
+
+
+                grid-template-rows:  repeat(2, 100px);
+
+                grid-template-columns:  repeat(3, 1fr);
+               
+               grid-gap:  30px 10px;
+
+              }
+
+              .gridItem:nth-child(1){ 
+
+                /* começa na primeira linha e termina na segunda, como é o padrão */
+                grid-row-start: 1;
+                grid-row-end:  2;
+
+                background:  red;
+
+                /* aqui acontece a mudança, o normal do 1 seria começar na primeira coluna e terminar na segunda, mas com esse codigo ele começa na terceira e termina na quarta, trocando de posição com o 3 */
+                grid-column-start: 3;
+                grid-column-end:  4;      
+
+                /* mesma coisa */
+                grid-column:  3/4;
+                grid-row:  1/2; 
+
+            }
+
+
+                /* mesclando grids.. */
+
+                .gridItem:nth-child(2) { 
+
+                    background:  green;
+
+                    /*os dois codigos fazem o mesmo, pegam a linha de baixo, fazendo o 2 ocupar também a linha do 3*/
+                    grid-row:  1/3;
+                    grid-row: 1/span 2;
+                 }      
+
+
+
+                   .gridItem:nth-child(6) {
+
+                    /* aqui o 6 vai ocupar da primeira coluna até a última) */
+                   background:  pink;
+                   grid-column:  1/4; 
+               }
+
+        </style>
+
+    </head>
+
+        <body>
+       
+            <h2> Grid Layout </h2>
+
+            <div class = "gridContainer">
+
+                <div class= "gridItem">1</div>
+                <div class= "gridItem">2</div>
+                <div class= "gridItem">3</div>
+                <div class= "gridItem">4</div>
+                <div class= "gridItem">5</div>
+                <div class= "gridItem">6</div>
+
+        </body>
+
+</html>

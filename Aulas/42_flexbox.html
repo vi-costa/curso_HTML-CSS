@@ -1,0 +1,183 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+        
+        <style>
+            
+            .flexbox { 
+
+                height:  250px;
+                border:  1px solid black;
+                display:  flex;
+                flex-direction:  row; /*  é o padrão */ 
+                margin-bottom:  15px;
+                 }
+            .flexbox div { 
+                 
+                width:  100%;
+                margin:  0px;
+             }
+
+            .div1 {  background:  green;}
+              
+            .div2 { }
+            
+            .div3 {  background:  red; }
+                   
+            .flexbox:nth-child(4) { 
+
+                flex-flow:  row nowrap;
+                
+             }
+
+             .flexbox:nth-child(5) div{ 
+
+               width:  10%;
+              }
+ 
+            .flexbox:nth-child(5) { 
+
+                justify-content: center;
+
+             }
+     
+             .flexbox:nth-child(6) { 
+
+                flex-flow:  row-reverse  ;
+
+             }
+            .flexbox:nth-child(7){ 
+
+                /* row-reverse não funciona com wrap*/
+                flex-flow:  row-reverse wrap ;
+
+             }
+             .flexbox:nth-child(8){ 
+
+                /* o row-reverse com wrap não funciona, nesse caso usamos wrap-reverse*/
+                flex-flow:  wrap-reverse ;
+
+             }
+             .flexbox:nth-child(9) { 
+
+                justify-content:  center;
+              }
+             .flexbox:nth-child(9) div { 
+
+                width:  20%;
+
+              }
+
+
+              /* o flex-grow faz o elemento selecionado ocupar o espaço "vazio" da página*/
+            .flexbox:nth-child(9) div:nth-child(2){
+                flex-grow: 1 ; 
+
+             }
+
+            /* order -1 volta o elemento uma casa, ou seja, a cor branca vai ocupar o espaço da cor verde na bandeira da italia, fazendo a ordem mudar para branco, verde e vermelho respectivamente */
+
+            .flexbox:nth-child(10) div:nth-child(2){
+                order: -1 ; 
+
+             }
+
+             /*      align-items serve para alinhar na horizontal
+                    align-self serve para alinhar na vertical            */
+            .flexbox:nth-child(11) { 
+                    align-items:  flex-start;
+                    
+            }
+
+            .flexbox:nth-child(11) div:nth-child(1){
+                 
+               align-self:  flex-end;
+
+             }
+
+            .flexbox:nth-child(11) div:nth-child(2){
+                align-self:  center; 
+                background:  grey;
+             }
+
+        </style>
+
+        <body> 
+
+            <h2> Display Flex </h2>
+            <p> Acomodar ou distribuir elementos de modo fácil </p>
+            <p> Ajuda a centralizar na vertical </p>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+             <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+             <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+
+            <div class = "flexbox">
+
+                <div class = "div1"> 1</div>
+                <div class = "div2"> 2 </div>
+                <div class = "div3"> 3 </div>
+
+            </div>
+        </body>
+
+</html>

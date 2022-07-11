@@ -1,0 +1,156 @@
+
+
+
+body { 
+
+	font-family: arial, sans-serif;
+	background:  lightgrey;
+	margin: 0;
+
+ }
+
+header { 
+
+	border-top: 0.2px solid transparent;
+	height: 500px;
+	background-image: url(imagens/bg-3.jpg);
+	background-position: right center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+  }
+
+
+h1 { 
+
+	text-transform: uppercase;
+	font-size: 36px;
+	text-shadow: 3px 3px 2px black;
+
+   }
+
+main { 
+
+	width: 60%;
+	margin: auto;
+
+ }
+
+h1 { 
+
+	font-size: 50px;
+	margin-top: 150px;
+
+ }
+
+ h2 { 
+
+	margin-top: 20px;
+	font-family: sans-serif; 
+	background-color: rgba(0,0,0,0.8);
+	padding: 10px;
+	display: inline-block;
+	border-bottom: 2px solid white;
+
+}
+
+
+	section{ 
+
+	overflow:auto; }
+	.card { 
+
+		width: 32%;
+		float: left;
+ 		
+ 		box-sizing: border-box;
+ 		margin-left: 1%;
+ 		
+
+ 		}	
+ 		h3 { 
+ 			margin: 0;
+			color: white;
+			background:#4F4F4F		;
+			padding: 15px;
+			letter-spacing: 1.5px;
+	
+			text-transform: uppercase;
+ 		 }
+ 		.card img { 
+
+ 			width: 100%;
+ 			display: block;
+ 		 }
+
+ section { 
+
+ 	margin-top: 15px;
+ 	padding: 10px;
+	background-color: white;
+
+  }
+
+  footer { 
+
+  	margin-top: 15px;
+  	text-align: center;
+  	padding: 10px;
+  
+  	background-color: grey;
+  	color: white;
+  	text-shadow: 2px 2px 5px black; 
+
+
+   }
+
+   
+   h4 { 
+    
+   	margin: 0;
+   	border-bottom-style: solid;
+   	border-color: lightgrey;
+   	font-size: 25px;
+   	background-color:#ECECEC;
+   	padding: 10px;	
+
+    }
+
+    ul{ 
+
+    margin: 30px 30px 0 0;
+    text-align:right; 
+	}
+
+    ul li { 
+    	
+    	list-style: none;
+    	
+    	display: inline-block;
+    
+    	border: 1px solid white;
+
+     }
+     ul a { 
+     	
+     	/*background:rgba coloca um background com transparencia
+
+     	a transparencia vai de 0 a 1*/
+
+
+
+
+     	background:rgba(0,0,0,0.25);
+
+     	display: block;
+     	padding: 10px;
+     	text-decoration: none;
+     	color: white;
+     	text-transform: uppercase;
+     	letter-spacing: 1.5px;
+      }
+
+      ul a:hover { 
+
+     	background:rgba(0,0,0,0.5);
+       }

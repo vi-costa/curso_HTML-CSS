@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+
+        <style> 
+
+            .gridContainer { 
+
+                width:  100%;
+               
+                margin:  30px auto;
+
+             }
+
+            .gridItem { 
+
+                background-color:  lightpink;
+
+                padding:  15px;
+                font-family:  sans-serif;
+             }
+
+            .gridItem:hover { 
+
+                background: darkorange;
+             }
+             /* GRID */ 
+
+             .gridContainer { 
+
+                display:  grid;
+
+                grid-template-columns:  repeat(5,1fr);
+
+                grid-template-rows:  100%;
+                
+
+                grid-template-areas: 
+                ".   header ."
+                
+                       ".     nav    ."
+                "footer nav  aside"
+                "footer nav aside"
+                    "footer nav aside"
+
+              }
+
+            .header { 
+                /*
+                 grid-column:  1/-1; */
+                min-height:  20px;
+                grid-area:  header;
+             }
+
+            .nav { 
+                        /*
+                 grid-column:  1/3; */
+               grid-area:  nav;
+             }
+
+            .aside { 
+                /*
+                 grid-row:  2/-1;
+                 grid-column:  3/4; */
+                grid-area:  aside;
+                border:  solid lightpink;
+                border-radius: 30px;
+                min-height:  100px;
+
+             }
+
+            .main { 
+
+             /* grid-column:  1/3; */
+             grid-area:  main;
+                min-height:  50px;
+
+              }
+
+            .footer { 
+                      grid-area:  aside;
+                border:  solid lightpink;
+                border-radius: 20px;
+                grid-area:  footer;
+
+             }
+
+        </style>
+
+    </head>
+
+        <body>
+       
+            <h2> Grid Layout </h2>
+
+            <div class = "gridContainer">
+
+                <header class = "header gridItem" >  </header>
+
+                 <nav class = "nav gridItem">  </nav>
+
+                <aside class = "aside gridItem">  </aside>
+
+                <main class = "main gridItem"> </main>
+
+                <footer class = "footer gridItem">  </footer>
+        </body>
+
+</html>

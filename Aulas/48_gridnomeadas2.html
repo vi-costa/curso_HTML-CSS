@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+
+        <style> 
+
+            .gridContainer { 
+
+                width:  90%;
+                background:  #ccc;
+                margin:  30px auto;
+
+             }
+
+            .gridItem { 
+
+                background-color:  orange;
+                padding:  15px;
+                font-family:  sans-serif;
+             }
+
+            .gridItem:hover { 
+
+                background: darkorange;
+             }
+             /* GRID */ 
+
+             .gridContainer { 
+
+                display:  grid;
+
+                grid-template-columns: repeat(3,[col-start] 1fr [col-end]);
+
+                grid-template-rows: [header-start] 100px [header-end nav-start] 50px [nav-end main-start]1fr[main-end footer-start] 50px[footer-end];
+                
+                grid-gap:  20px;
+
+              }
+
+            .header { 
+              
+               grid-column: col-start 1/ col-end 3;
+             /*  grid-row:  header-start / header-end;*/
+               grid-row:  header;
+             }
+
+            .nav { 
+              
+              grid-column:  col-start 1/ col-end 2;
+              /* grid-row:  nav-start / nav-end;*/
+              grid-row:  nav;
+
+                    }
+
+            .aside { 
+
+                grid-column:  col-start 3/col-end 3;
+
+
+                /* se você pega dois elementos diferentes, mas pega eles por inteiro, podemos fazer também essa redução
+                grid-row:  nav-start/footer-end; */
+
+                grid-row:  nav/footer;
+
+             }
+            .main { 
+
+                grid-column:  col-start 1/col-end 2;
+               /* grid-row:  main-start / main-end; */
+                grid-row:  main;
+                min-height:  200px;
+
+              }
+
+            .footer { 
+
+                /* por padrão, se você tiver um start end do mesmo elemento, você pode diminuir o código pondo só o elemento
+                grid-row:  footer-start / footer-end; */
+
+                grid-row:  footer;
+
+                grid-column:  col-start 1/col-end 3;
+             }
+
+
+        </style>
+
+    </head>
+
+        <body>
+       
+            <h2> Grid Layout </h2>
+
+            <div class = "gridContainer">
+
+                <header class = "header gridItem" > header </header>
+
+                 <nav class = "nav gridItem"> nav </nav>
+
+                <aside class = "aside gridItem"> aside </aside>
+
+                <main class = "main gridItem"> main </main>
+
+                <footer class = "footer gridItem"> footer </footer>
+        </body>
+
+</html>

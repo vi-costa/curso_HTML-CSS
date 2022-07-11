@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!-- doctype informa ao navegador a versão do html
+	que deve ser renderizada -->
+
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name = "author " content = "Vitor" >
+
+		<meta name= "description"content = "lista de documentos" > 
+
+		<title> 
+			Página de exemplo estrutura básica
+		</title>
+
+		<style> 
+
+			.div1 { 
+
+				width: 150px;
+				height:  50px;
+				background:  red;
+				transform:  translate(50%,50%);
+ 
+			 }
+
+			 .div2 { 
+			 		
+
+			 	left:  50px;
+			 	position:  relative ;
+				width: 150px;
+				height:  50px;
+				background:  blue;
+
+			 }
+			.div3-interna { 
+
+				background:  yellow;
+				transform:  translateX(50%);
+			 }
+			.div3 {
+
+				width:  50%;
+				overflow:  hidden;
+				border: solid 2px black;
+
+			}
+			.div4-interna { 
+
+				background:  yellow;
+				transform:  rotate(45deg);
+
+			 }
+			.div4 {
+
+				width:  50%;
+				overflow:  hidden;
+				border: solid 2px black;
+
+			}
+			.div5-interna { 
+				background:  yellow;
+				transform:  rotate(45deg);
+				transform-origin:  left top;
+			 }
+			.div5 {
+
+				width:  50%;
+				overflow:  hidden;
+				border: solid 2px black;
+
+			}
+			.div6-interna { 
+
+				background:  yellow;
+				transform:  rotate(45deg) translate(40px);
+				
+			 }
+			.div6 {
+
+				width:  50%;
+				overflow:  hidden;
+				border: solid 2px black;
+
+			}	
+			.div7-interna { 
+
+				background:  yellow;
+				transform:  translate(40px) rotate(45deg);
+			
+			 }
+			.div7 {
+
+				width:  50%;
+				overflow:  hidden;
+				border: solid 2px black;
+
+			}
+			.div8 { width: 100px;
+			height: 100px;
+			background: orange;
+			transform:  skewY(10deg);
+
+			 }
+			.div9 { 
+
+				width: 100px;
+				height:  100px;
+				background:  blue;
+				transform:  scale(.5);
+
+			 }
+			.div9:hover { 
+
+				transform:  scale(1);
+			 }
+		</style>
+
+
+	</head>
+
+
+	<body>
+		<div class = "div1"  > div 1 </div>
+		<div class = "div2"  > div 2 </div>
+
+		<div class = "div3"  >
+			<div class ="div3-interna">conteudo qualquer </div>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam mollitia a voluptate, quos inventore vel. Facere voluptas quisquam, aperiam doloremque suscipit ex obcaecati, deserunt repellat laudantium quasi consequuntur facilis.</p> 
+			</div>
+
+			<hr>
+				<div class = "div4"  >
+			<div class ="div4-interna">conteudo qualquer </div>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam mollitia a voluptate, quos inventore vel. Facere voluptas quisquam, aperiam doloremque suscipit ex obcaecati, deserunt repellat laudantium quasi consequuntur facilis.</p> 
+			</div>
+
+				<div class = "div5"  >
+			<div class ="div5-interna">conteudo qualquer </div>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam mollitia a voluptate, quos inventore vel. Facere voluptas quisquam, aperiam doloremque suscipit ex obcaecati, deserunt repellat laudantium quasi consequuntur facilis.</p> 
+			</div>
+
+				<div class = "div6"  >
+			<div class ="div6-interna"> rotate translate</div>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam mollitia a voluptate, quos inventore vel. Facere voluptas quisquam, aperiam doloremque suscipit ex obcaecati, deserunt repellat laudantium quasi consequuntur facilis.</p> 
+			</div>
+
+					<div class = "div7"  >
+			<div class ="div7-interna"> translate rotate </div>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam mollitia a voluptate, quos inventore vel. Facere voluptas quisquam, aperiam doloremque suscipit ex obcaecati, deserunt repellat laudantium quasi consequuntur facilis.</p> 
+			</div>
+
+			<hr>
+
+			<div class = "div8"> skew</div>
+			<div class ="div9" > scale </div>
+	</body>
+</html>
